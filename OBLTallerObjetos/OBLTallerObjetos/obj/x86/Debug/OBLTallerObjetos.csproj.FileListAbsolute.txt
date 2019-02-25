@@ -1,5 +1,7 @@
 C:\Users\Virtual\Desktop\OBLTallerObjetos\OBLTallerObjetos\OBLTallerObjetos\bin\Debug\OBLTallerObjetos.exe
 C:\Users\Virtual\Desktop\OBLTallerObjetos\OBLTallerObjetos\OBLTallerObjetos\bin\Debug\OBLTallerObjetos.pdb
-C:\Users\Virtual\Desktop\OBLTallerObjetos\OBLTallerObjetos\OBLTallerObjetos\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Virtual\Desktop\OBLTallerObjetos\OBLTallerObjetos\OBLTallerObjetos\obj\x86\Debug\OBLTallerObjetos.exe
 C:\Users\Virtual\Desktop\OBLTallerObjetos\OBLTallerObjetos\OBLTallerObjetos\obj\x86\Debug\OBLTallerObjetos.pdb
+C:\Users\Virtual\Desktop\OBLTallerObjetos\OBLTallerObjetos\OBLTallerObjetos\obj\x86\Debug\OBLTallerObjetos.csprojResolveAssemblyReference.cache
+C:\Users\Virtual\Desktop\OBLTallerObjetos\OBLTallerObjetos\OBLTallerObjetos\bin\Debug\AMCGlib.dll
+C:\Users\Virtual\Desktop\OBLTallerObjetos\OBLTallerObjetos\OBLTallerObjetos\bin\Debug\AMCGlib.pdb
