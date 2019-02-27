@@ -2,3 +2,4 @@ C:\Users\Virtual\Desktop\OBLTallerObjetos\OBLTallerObjetos\AMCGlib\bin\Debug\AMC
 C:\Users\Virtual\Desktop\OBLTallerObjetos\OBLTallerObjetos\AMCGlib\bin\Debug\AMCGlib.pdb
 C:\Users\Virtual\Desktop\OBLTallerObjetos\OBLTallerObjetos\AMCGlib\obj\Debug\AMCGlib.dll
 C:\Users\Virtual\Desktop\OBLTallerObjetos\OBLTallerObjetos\AMCGlib\obj\Debug\AMCGlib.pdb
+C:\Users\Virtual\Desktop\OBLTallerObjetos\OBLTallerObjetos\AMCGlib\obj\Debug\AMCGlib.csprojResolveAssemblyReference.cache

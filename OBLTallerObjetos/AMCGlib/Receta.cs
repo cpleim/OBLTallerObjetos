@@ -16,6 +16,7 @@ namespace AMCGlib
         private string imagen;
         private string urlVideo;
         private bool medidas = true; //True -> Metrico, Fasle -> Ingles
+        private List<Receta> recetasList = new List<Receta>();
 
         public int Id
         {
@@ -69,6 +70,12 @@ namespace AMCGlib
         {
             get { return medidas; }
             set { medidas = value; }
+        }
+
+        public List<Receta> RecetasList
+        {
+            get { return recetasList; }
+            set { recetasList = value; }
         }
 
     }
