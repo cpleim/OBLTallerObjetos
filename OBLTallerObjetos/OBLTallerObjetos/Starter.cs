@@ -9,21 +9,29 @@ namespace OBLTallerObjetos
     class Starter
     {
        public static void Main(string[] args){
-        
-            // Inicializa el objeto y mete 5 recetas como preset
+            //SUMMARY
+           /*
+            * Inicializador
+            */
 
-            //TODO
+           //TODO
             /*
-             * Mover el for al metodo "Crear Receta"
+             * Mover el for al metodo "Crear Receta".
+             * Mover la lista de tipos de receta a la clase Receta, renombrarla como "presetTiposCocina" e instanciarla en el metodo Main de la clase Starter.
              */
 
            //FIXME
            /*
             * El random se manda cualquiera y genera numeros repetidos para cada objeto generado por el For (Ya se por que es).
             */
+           var tiposCocina = new List<string> { "Internacional", "Mexicana", "Oriental", "Italiana", "Reposteria Alemana" }; //Lista con presets de tipos de recetas
+           int indexTipos;
+           string tipoChosed;
 
            Random rnd = new Random();
            Receta receta = new Receta();
+           tipoCocina tipos = new tipoCocina();
+
             for (int i = 0; i < 5; i++)
             {
                 receta.Id = rnd.Next(100);
@@ -36,6 +44,10 @@ namespace OBLTallerObjetos
                 receta.UrlVideo = "youtube.com";
                 receta.Medidas = true;
                 receta.RecetasList.Add(receta);
+                //Para elegir el tipo de cocina
+                indexTipos = rnd.Next(tiposCocina.Count); //Elige un nro random de indice de la lista
+                tipoChosed = tiposCocina[indexTipos];
+                tipos.TipoCocina_List.Add(tipoChosed);//Lo agrega a la lista de la clase tipoCocina
             }
             int selectedOption = 0;
             do
@@ -48,8 +60,9 @@ namespace OBLTallerObjetos
         {
             Console.Clear();
             Console.WriteLine("--------- AMCG - Menu Principal---------");
+            Console.WriteLine("------- Usuario no administrativo ------"); //FIXME
             Console.WriteLine();
-            Console.WriteLine("1. Ingreso de recetas");
+            Console.WriteLine("1. Ingreso de recetas"); //Solo si el rol es administrador. Establecer este control.
             Console.WriteLine("2. Ver recetas");
             Console.WriteLine("3. Salir");
             Console.WriteLine();

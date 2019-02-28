@@ -78,5 +78,11 @@ namespace AMCGlib
             set { recetasList = value; }
         }
 
+        public static Receta crearReceta()
+        {
+            //Mover el codigo de Starter para aca.
+            throw new NotImplementedException();
+        }
+
     }
     }
