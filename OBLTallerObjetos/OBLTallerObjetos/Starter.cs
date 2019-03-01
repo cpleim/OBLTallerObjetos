@@ -72,42 +72,8 @@ namespace OBLTallerObjetos
             switch (option)
             {
                 case 1:
-                    Receta recetaTemp = new Receta();
-                    recetaTemp.Id = rnd.Next(1000); //Le asigna un numero autonumerico
-                    Console.Clear();
-                    Console.WriteLine("--------- AMCG - Ingresar Recetas ---------");
-                    Console.WriteLine("\nIngrese el nombre de la receta: ");
-                    recetaTemp.Nombre = Console.ReadLine();
-                    Console.WriteLine("\nIngrese la descripcion: ");
-                    recetaTemp.Descripcion = Console.ReadLine();
-                    Console.WriteLine("\nIngrese la elaboracion de la receta: ");
-                    recetaTemp.ElaboracionBody = Console.ReadLine();
-                    Console.WriteLine("\nIngrese el tiempo de coccion: ");
-                    recetaTemp.TiempoCoccion = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("\nIngrese la cantidad de porciones :");
-                    recetaTemp.CantPorciones = Convert.ToInt32(Console.ReadLine());
-                    recetaTemp.Imagen = "Imagen" + rnd.Next(1000) + ".png";
-                    recetaTemp.UrlVideo = "youtube.com";
-                    Console.WriteLine("\nIngrese el sitema de medidas: ");
-                    Console.WriteLine("1- Imperial (Sistema Ingles)");
-                    Console.WriteLine("2- Sistema Metrico.");
-                    int tempOpt = Convert.ToInt32(Console.ReadLine());
-                    if (tempOpt == 1)
-                    {
-                        recetaTemp.Medidas = false;
-                    }
-                    if (tempOpt == 2)
-                    {
-                        recetaTemp.Medidas = true;
-                    }
-                    else {
-                        Console.WriteLine("Ingrese una opcion correcta!");
-                    }
-                    recetas.RecetasList.Add(recetaTemp);
-                    Console.WriteLine();
-                    Console.WriteLine("\nReceta agregada!");
-                    Console.WriteLine("Presione cualquier tecla para volver al menu.");
-                    Console.ReadKey();
+                   var objtemp = Receta.crearReceta();
+                   recetas.RecetasList.Add(objtemp);
                     break;
                 case 2:
                     Console.Clear();

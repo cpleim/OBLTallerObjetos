@@ -80,8 +80,26 @@ namespace AMCGlib
 
         public static Receta crearReceta()
         {
-            //Mover el codigo de Starter para aca.
-            throw new NotImplementedException();
+            Receta recetaTemp = new Receta();
+            Receta recetas = new Receta();
+            Random rnd = new Random();
+
+            recetaTemp.Id = rnd.Next(1000);
+            recetaTemp.Nombre = "PAPITAS AL HORNO";
+            recetaTemp.Descripcion = "PAPITAS AL RE HORNO";
+            recetaTemp.ElaboracionBody = "TE METES LAS PAPITAS BIEN EN EL HORNO";
+            recetaTemp.TiempoCoccion = 33;
+            recetaTemp.CantPorciones = 5;
+            recetaTemp.Imagen = "Imagen" + rnd.Next(1000) + ".png";
+            recetaTemp.UrlVideo = "youtube.com";
+            recetaTemp.Medidas = true;
+            recetas.RecetasList.Add(recetaTemp);
+            Console.WriteLine();
+            Console.WriteLine("\nReceta agregada!");
+            Console.WriteLine("Presione cualquier tecla para volver al menu.");
+            Console.ReadKey();
+
+            return recetaTemp;
         }
 
     }
